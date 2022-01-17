@@ -1,91 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>FabLab Academy- Amal Ashoor</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles2.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
         <style>
          img {
             display: block;
             margin-left: auto;
             margin-right: auto;
             }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            }
+         table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+           }
+
+         th, td {
+            text-align: left;
+            padding: 16px;
+           }
+
+         tr:nth-child(even) {
+           background-color: #f2f2f2;
+            }
         </style>
     </head>
     <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">FabLab UAE</span>
+                <span class="site-heading-lower">My Fab Academy Journey</span>
+            </h1>
+        </header>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5" background-color="white">
-                <a class="navbar-brand" style="color: #008B8B"><i><b>My Fab Academy Journey</b></i></a>
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: black" href="workshops.html">Workshops</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: black" href="assignments.html">Assignments</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: black" href="final.html">Final Project</a></li>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="workshops.html">Workshops</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="assignments.html">Assignment</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="final.html">Final Project</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">3. 3D Printing</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Goal: Learn briefly about 3D printing and test an Ultimaker 3D printer. </p>
+        
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-lower"><b>1. Laser Cutting</b></span>
+                            </h2>
+                            <p class="mb-0" ><b># Goal:</b><br>Find the kerf and the proper cutting parameters to specific material.<br><br>
+                                <b># Tasks:</b><br>  1- Draw a simple design using CorelDraw software.<br>
+                                 2- Lase cut the design using Universal Laser System interface with various cutting power and speed. <br>
+                                 3- Draw a rectangle divided into 12 smaller ones to calculate the kerf. <br><br>
+                                <b># Procedures:</b><br><i><ins> a. Proper Laser Cutting Parameters:</ins></i><br><br>For this assignment, I choose the material to be cardboard with 0.6 cm thickness. Also,  I draw a  square with my initial letter "A" using CorelDraw software. I have tried seven different combinations of speed and power to get the proper cardboard cutting parameters using the Universal Laser System interface. Please remember that the red color refers to cut, and the black one refers to engraving.<br><br></p>
+                            
+                            <p class="mb-0" ><b> The first trial </b></p>
+                            <p style="text-align:left;">The initial guess of the parameters is shown below in the table. This results in light engraving and no cut at all. </p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>27%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>30%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r1.jpg" style="width:30%;">
+                            <br>
+                            <p class="mb-0" ><b> The Second trial </b></p>
+                            <p style="text-align:left;">Due to the previous trial results, the power for both colors was increased. However, the speed for both of them was kept at 80%. This results in a clear engraving and a slightly deeper cut but not the one needed to have an easily removed design.</p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>30%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>45%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r2.jpg" style="width:30%;">
+                            <br>
+                           <p class="mb-0" ><b> The Third trial </b></p>
+                            <p style="text-align:left;">In this trial, I examined the impact of the cut speed on the design by reducing it to 60%. All the other parameters were kept similar to the last trial. This results in a slightly deeper cut but does not penetrate the bottom of the cardboard.</p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>30%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>45%</td>
+                                        <td>60%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r3.jpg" style="width:30%;">
+                            <br>
+                            <p class="mb-0" ><b> The Fourth trial </b></p>
+                            <p style="text-align:left;">I continued to reduce the cutting speed to half the figure in the previous trial. This clearly improved the cutting process but still was not enough to remove the design from the cardboard.</p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>30%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>45%</td>
+                                        <td>30%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r4.jpg" style="width:30%;">
+                            <br>
+                            <p class="mb-0" ><b> The Fifth trial </b></p>
+                            <p style="text-align:left;">In this trial, I reduced the engraving speed to 60% and increased the cutting power to 65%. As a result, the engraving was not clear and the cutting was enhanced.</p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>30%</td>
+                                        <td>60%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>65%</td>
+                                        <td>30%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r5.jpg" style="width:30%;">
+                            <br>
+                            <p class="mb-0" ><b> The Sixth trial </b></p>
+                            <p style="text-align:left;">I returned the engraving speed to 80%, where I found a clear engraving from the previous trials. Also, I increased the cutting power to 100% and reduced its speed to 15%. As a result, the laser could penetrate the other face of the cardboard. However, the design requires a slight push to be removed from the board.</p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>30%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>100%</td>
+                                        <td>15%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r6.jpg" style="width:30%;">
+                            <br>
+                            <p class="mb-0" ><b> The Seventh trial </b></p>
+                            <p style="text-align:left;">Here, I only reduced the cutting speed slightly to 10%. Thus, the design was easily removed from the cardboard.</p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Power</th>
+                                        <th>Speed</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Black</td>
+                                        <td>30%</td>
+                                        <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red</td>
+                                        <td>100%</td>
+                                        <td>10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <img src="assets/assign1/r7.jpg" style="width:30%;">
+                            <br><br><br>
+                            <p class="mb-0" ><i><ins> b. Calculating the kerf:</ins></i><br></p>
+                            <p style="text-align:left;">In this part, I draw a rectangle with 6 cm width and 4 cm height using Fusion 360 software. Then, divid the inner part of the rectangle to 12 equal smaller rectangles with 0.5 cm width using the rectangular pattern feature. <br><br></p>
+                            <img src="assets/assign1/k1.png" style="width:70%;">
+                            <br>
+                            <p style="text-align:left;">Then, I laser cut the design on the same cardboard with 0.6 cm thickness using the same proper cutting parameters. After that, I calculated the kerf using the equation:<br></p>
+                            <p class="mb-0" > <b><mark>kerf= (theoretical length- measured length)/(# of sections)</mark></b><br></p> 
+                            <p class="mb-0" ><b><mark>kerf= (6 - 5.8)/(12)= 0.0167</mark></b><br></p>
+                            <img src="assets/assign1/k4.jpg" style="width:70%;">
+                            <br>
+                            <br>
+                            
+                            <p class="mb-0" ><b># Challenges:</b></p>
+                            <br>
+                            <p style="text-align:left;"> During the kerf calculation, the used cardboard burned due to a mistake in the rectangle design. I used to draw single small rectangles, then connect them to make the larger one in the first trail. This designing method made the laser cut a rectangle side back and forth, which set the board on fire. <br><br></p> 
+                            <img src="assets/assign1/k3.jpg" style="width:70%;">
+                            <br>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
         
         
-        <!--documentation-->
-        <br>
-        <h3 style="text-align:center;color: #008b8b" ><i> a. <ins> Tasks </ins>: </i></h3>
-        <br>
-        <p style="text-align:center;color: #000">
-            1- Preview a 3D printing standard test using Ultimaker Cura software.<br>
-            2- Printing the standard test using an Ultimaker 3D printer. </p>
-        <br>
-        <h3 style="text-align:center;color: #008b8b" ><i> b. <ins> Procedure </ins>: </i></h3>
-        <br>
-        <p style="text-align:center;">1- Open the standard test, which is bridging without support, in Cura software. 
-          <br> 2- Alter important printing settings, such as Infill, speed, and layer thickness, and notice their impact on the printing time.
-          <br> 3- Click on slice and preview to know exactly how the layers will be build-up by the printer.
-          <br> 4- After selecting the printing settings, save the file to disk in the format "Gcode".
-         <br> 5- To start the printing process, ensure that the desired material is connected to the printer and the type of the material in the printer system is correct.
-        <br> [To change the material, click on material, then material 1, then change. After that, remove the old material and replace it with the new one.]
-        <br> 6- Select the desired material,  which is PIA in my case. Then, click confirm and choose the design file to start the printing process.
-            
-        </p>
-        
-        <br>
-        <img src="assets/3dp/1.png" style="width:50%;">
-        <br>
-        
-        <img src="assets/3dp/2.png" style="width:50%;">
-        <br>
        
-        <img src="assets/3dp/3.png" style="width:50%;">
-        <br>
-        
-        
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; My Fab Academy Journey 2022</p></div>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Amal Ashoor 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
     </body>
 </html>
 

@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>FabLab Academy- Amal Ashoor</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles2.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
         <style>
          img {
             display: block;
@@ -21,118 +25,115 @@
         </style>
     </head>
     <body>
+        <header>
+            <h1 class="site-heading text-center text-faded d-none d-lg-block">
+                <span class="site-heading-upper text-primary mb-3">FabLab UAE</span>
+                <span class="site-heading-lower">My Fab Academy Journey</span>
+            </h1>
+        </header>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5" background-color="white">
-                <a class="navbar-brand" style="color: #008B8B"><i><b>My Fab Academy Journey</b></i></a>
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: black" href="workshops.html">Workshops</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: black" href="assignments.html">Assignments</a></li>
-                        <li class="nav-item"><a class="nav-link" style="color: black" href="final.html">Final Project</a></li>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="workshops.html">Workshops</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="assignments.html">Assignment</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="final.html">Final Project</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Header-->
-        <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">4. Introduction to 2D and 3D Design</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Goal: Learn briefly about two and three-dimensional designing using Fusion 360 software. </p>
+        
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-lower"><b>4. Introduction to 2D and 3D Design</b></span>
+                            </h2>
+                            <p class="mb-0" ><b># Goal:</b><br>Learn briefly about two and three-dimensional designing using Fusion 360 software.<br><br>
+                                <b># Tasks:</b><br>  1- Learn 2D design, i.e. sketch, using Fusion 360 software. Then, utilizing this design to create a 3D one.<br>
+                                2- Learn how to transfer the created designs from Fusion 360 to allow the laser cutting machine and 3D printer to implement them.<br><br>
+                                <b># Procedures:</b><br><i><ins> a. Screw Board:</ins></i><br><br></p>
+                            <p style="text-align:left;">1- After choosing the top view, click on Create Sketch in the toolbar to create a new sketch, then save it. <br>
+                            2- Draw a center rectangle with 50 mm width and 100 mm length starting from the zero point.</p>
+                            <img src="assets/23d/1.png" style="width:70%;">
+                            <br>
+                            <p style="text-align:left;">3- Draw two perpendicular constriction lines, each is 6 mm in length, at one of the rectangle corners. Then, draw a circle with 5 mm diameter as shown in the following images. </p>
+                            <img src="assets/23d/2.png" style="width:70%;">
+                            <br>
+                            <img src="assets/23d/3.png" style="width:70%;">
+                            <br>
+                            <p style="text-align:left;">4- To avoid repeating step 3 for the left corners, use the mirror feature by selecting the circle as the object and <br> adding two perpendicular construction lines as the mirror lines.</p>
+                            <img src="assets/23d/6.png" style="width:70%;">
+                            <br>
+                            <p style="text-align:left;"> 5- To transfer this 2D design into a 3D one, you can click on Create then Extrude. For example, I altered the extrusion distance to be 10 mm. <br>
+                            6- To smoothen out the rough edges for the screw board, click on Modify then Chamfer then select the edges and alter the chamfer distance to be 5 mm. </p>
+                            <img src="assets/23d/7.png" style="width:70%;">
+                            <br>
+                            
+                           <p style="text-align:left;">7- The final product of the above steps is shown below. To manufacture the design using a laser cutting machine, select the top face of the 3D design then click on Create Sketch. After that, click on Create then Project/Include to add any 3D design face to the sketch. Please be aware that you have to save it as DXF to allow the machine to process it. However, to create a 3D printed version of the design save the body as a mesh.</p>
+                           <img src="assets/23d/8.png" style="width:70%;">
+                           <br><br>
+                           <p class="mb-0" ><i><ins> b. Spinner:</ins></i><br><br></p>
+                           <p style="text-align:left;">1- Draw inner and outer circles in the zero point to represent the center bearing with diameters 15 mm and 20 mm,  respectively. Then, use the mirror feature to create a reflection of the circles where the distance between the centers is 27 mm. </p>
+                           <img src="assets/23d/9.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;">2- Instead of mirroring the left two bearings, use the circular pattern feature by selecting the objects, which are the inner and outer circles, and the center point, which is the zero point. </p>
+                           <img src="assets/23d/10.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;">3- Connect the center and the outer bearings by drawing 3-point arcs, as shown below.</p>
+                           <img src="assets/23d/12.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;"> 4- To transfer this 2D design into a 3D one, you can click on Create then Extrude. For example, I altered the extrusion distance to be 10 mm while leaving the inner circles of the outer bearings.</p>
+                           <img src="assets/23d/13.png" style="width:70%;">
+                           <br>
+                           <br>
+                           <p class="mb-0" ><i><ins> c. Cup:</ins></i><br><br></p>
+                           <p style="text-align:left;">1- Draw a cross-sectional of the quarter of the cup. The following image shows the details of the cross-section. </p>
+                           <img src="assets/23d/14.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;">2- Click on Create, then Revolve. To get the 3D design, select the cross-section as the profile and the z-axis as the revolving axis. </p>
+                           <img src="assets/23d/15.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;">3- To create a hollow cavity, click on modify, then shell. Set the wall thickness, for example, to 3 mm.</p>
+                           <img src="assets/23d/16.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;"> 4- To smooth out the edges of the cup, use the fillet feature and set it to 1.25 mm. </p>
+                           <img src="assets/23d/17.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;"> 5- To sketch the cup handle, click on Project/ Include, then project and select the cup body and draw an arc. Thus, a sketch of the cup body will be produced.Then, use offset to select the thickness of the handle. </p>
+                           <img src="assets/23d/18.png" style="width:70%;">
+                           <br>
+                           <img src="assets/23d/19.png" style="width:70%;">
+                           <br>
+                           <p style="text-align:left;"> 6- Click on Extrude, then select the direction of extrusion to be two and join the handle with the cup body. Set the thickness in each direction to be 2 mm. </p>
+                           <img src="assets/23d/20.png" style="width:70%;">
+                           <br>
+                            <p class="mb-0" ><b># Challenges:</b><br>I did not face any major challenges because I have previous experience in using Fusion 360 software.<br><br></p> 
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
         
         
-        <!--documentation-->
-        <br>
-        <h3 style="text-align:center;color: #008b8b" ><i> a. <ins> Tasks </ins>: </i></h3>
-        <br>
-        <p style="text-align:center;color: #000">
-            1- Learn 2D design, i.e. sketch, using Fusion 360 software. Then, utilizing this design to create a three-dimensional one.<br>
-            2- Learn how to transfer the created designs from Fusion 360 to allow the laser cutting machine and 3D printer to implement them.
-        </p>
-        <br>
-        <h3 style="text-align:center;color: #008b8b" ><i> b. <ins> Procedure </ins>: </i></h3>
-        <br>
-        <h5 style="text-align:center;color: #7fb1b3" ><i> <ins> [Screw Board] </ins></i></h5>
-        <br>
-        <p style="text-align:center;">1- After choosing the top view, click on Create Sketch in the toolbar to create a new sketch, then save it. <br>
-        2- Draw a center rectangle with 50 mm width and 100 mm length starting from the zero point.</p>
-        <img src="assets/23d/1.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">3- Draw two perpendicular constriction lines, each is 6 mm in length, at one of the rectangle corners. Then, <br> draw a circle with 5 mm diameter as shown in the following images. </p>
-        <img src="assets/23d/2.png" style="width:50%;">
-        <br>
-        <img src="assets/23d/3.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">4- To avoid repeating step 3 for the left corners, use the mirror feature by selecting the circle as the object and <br> adding two perpendicular construction lines as the mirror lines.</p>
-        <img src="assets/23d/6.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;"> 5- To transfer this 2D design into a 3D one, you can click on Create then Extrude. For example, I altered the extrusion <br> distance to be 10 mm. <br>
-            6- To smoothen out the rough edges for the screw board, click on Modify then Chamfer then select the edges and alter <br> the chamfer distance to be 5 mm.
-        </p>
-        <img src="assets/23d/7.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">The final product of the above steps is shown below. To manufacture the design using a laser cutting machine,<br> select the top face of the 3D design then click on Create Sketch. After that, click on Create then <br> Project/Include to add any 3D design face to the sketch. Please be aware that you have to save it as DXF <br> to allow the machine to process it. However, to create a 3D printed version of the design save the body as a mesh.</p>
-         <img src="assets/23d/8.png" style="width:50%;">
-        <br>
-        <br>
-        
-        
-        <h5 style="text-align:center;color: #7fb1b3" ><i> <ins> [Spinner] </ins></i></h5>
-        <br>
-        <p style="text-align:center;">1- Draw inner and outer circles in the zero point to represent the center bearing with diameters 15 mm and 20 mm, <br> respectively. Then, use the mirror feature to create a reflection of the circles where the distance between <br> the centers is 27 mm. </p>
-        <img src="assets/23d/9.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">2- Instead of mirroring the left two bearings, use the circular pattern feature by selecting the objects,<br> which are the inner and outer circles, and the center point, which is the zero point. </p>
-        <img src="assets/23d/10.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">3- Connect the center and the outer bearings by drawing 3-point arcs, as shown below.</p>
-        <img src="assets/23d/12.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;"> 4- To transfer this 2D design into a 3D one, you can click on Create then Extrude. For example, I altered the extrusion <br> distance to be 10 mm while leaving the inner circles of the outer bearings.
-        </p>
-        <img src="assets/23d/13.png" style="width:50%;">
-        <br>
-        <br>
-        
-        
-        <h5 style="text-align:center;color: #7fb1b3" ><i> <ins> [Cup] </ins></i></h5>
-        <br>
-        <p style="text-align:center;">1- Draw a cross-sectional of the quarter of the cup. The following image shows the details of the cross-section. </p>
-        <img src="assets/23d/14.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">2- Click on Create, then Revolve. To get the 3D design, select the cross-section as the profile and the z-axis <br> as the revolving axis. </p>
-        <img src="assets/23d/15.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;">3- To create a hollow cavity, click on modify, then shell. Set the wall thickness, for example, to 3 mm.</p>
-        <img src="assets/23d/16.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;"> 4- To smooth out the edges of the cup, use the fillet feature and set it to 1.25 mm. </p>
-        <img src="assets/23d/17.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;"> 5- To sketch the cup handle, click on Project/ Include, then project and select the cup body and draw an arc.<br> Thus, a sketch of the cup body will be produced.Then, use offset to select the thickness of the handle. </p>
-        <img src="assets/23d/18.png" style="width:50%;">
-        <br>
-        <img src="assets/23d/19.png" style="width:50%;">
-        <br>
-        <p style="text-align:center;"> 6- Click on Extrude, then select the direction of extrusion to be two and join the handle with the cup body. <br> Set the thickness in each direction to be 2 mm. </p>
-        <img src="assets/23d/20.png" style="width:50%;">
-        <br>
-        
-        
+       
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; My Fab Academy Journey 2022</p></div>
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Amal Ashoor 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+
     </body>
 </html>
 
