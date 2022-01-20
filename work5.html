@@ -22,6 +22,25 @@
             margin-left: auto;
             margin-right: auto;
             }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            }
+         table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+           }
+
+         th, td {
+            text-align: left;
+            padding: 16px;
+           }
+
+         tr:nth-child(even) {
+           background-color: #f2f2f2;
+            }
         </style>
     </head>
     <body>
@@ -56,29 +75,108 @@
                             <h2 class="section-heading mb-4">
                                 <span class="section-heading-lower"><b>5. Electronics Production</b></span>
                             </h2>
-                            <p class="mb-0" ><b># Goal:</b><br>Learn about Github and establish and customize a website utilizing HTML.<br><br>
-                                <b># Tasks:</b><br>  1- Establish a repository in Github after registration.<br>
-                                 2- Connect the established repository with the used PC. <br>
-                                 3- Push modifications from the PC to Github. <br>
-                                 4- Start a website in Github and edit it from the PC.<br><br>
-                                <b># Procedures:</b><br><i><ins> a. Github control:</ins></i><br><br></p>
-                            <p style="text-align:left;">1- Download Git software from the <a href=“https://git-scm.com”>website</a> and install it on your PC, which is MacBook Air in my case. </p>
-                            <img src="assets/git/1.png" style="width:70%;">
+                            <p class="mb-0" ><b># Goal:</b><br>Manufacture a milled printed circuit board (PCB) and program it.<br><br>
+                                <b># Tasks:</b><br>   1- Manufacture a PCB called FabTinyISP using a Roland SRM-20 CNC machine.<br>
+                                 2- Soldering the circuit parts to the FabTinyISP. <br>
+                                 3- Program the FabTinyISP. <br>
+                                 <br>
+                                <b># Procedures:</b><br><i><ins> a. Fabrication:</ins></i><br><br></p>
+                            <p style="text-align:left;">1- Download the board outline and the traces for FabTinyISP in PNG format from this <a href=“http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html”>link</a>. </p>
+                            <img src="assets/pcb/1.png" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/4.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">2- To change the format of the images, which are PNG, to Ronald mill (.rml) to allow the CNC machine to understand it, I used <a href=“http://fabmodules.org”>Fab Modules</a>. Then, I specify PCB traces (1/64) for the traces image and PCB outline (1/32) for the outline image. Also, I select SRM-20 as the name of the machine. Please be aware that all zero points of the axis X, Y, and Z are at zero before the last step, which is calculation.This will produce the routes of the machine movement to produce the final board.</p>
+                            <img src="assets/pcb/3.png" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/5.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">3- Moving to the Renold SMR-20 CNC machine. I started with placing an FR1-MDF board inside the machine and ensuring it was flat using the screws.</p>
+                            <img src="assets/pcb/6.jpg" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/7.jpg" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">4- Before milling, ensure that you change the milling bit of the machine using a screwdriver. Use 1/64 milling bit for the traces and 1/32 for the outline.Then, select the origin point (X, Y, Z) based on the available space on the board and click on cut and add trace file to start milling. </p>
+                            <img src="assets/pcb/22.jpg" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/23.jpeg" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/12.jpg" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">This is the final result </p>
+                            <img src="assets/pcb/13.jpg" style="width:70%;">
+                            <br>
+                            <img src="assets/pcb/15.jpg" style="width:70%;">
                             <br>
                             
-                            <p style="text-align:left;">4- To edit the website, open index.html using Brackets software. </p>
-                            <img src="assets/git/16.png" style="width:70%;"> 
+                             <p class="mb-0" ><i><ins> b. Soldering:</ins></i><br><br></p>
+                            <p style="text-align:left;">1- Collect the 13 components of the circuit. I used double-sided tape to stick the components on paper to avoid losing them since they are tiny.  </p>
+                            <br>
+                            <table class="center">
+                                <tbody>
+                                    <tr>
+                                        <th>Component</th>
+                                        <th>Quantity</th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>ATtiny45</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1kΩ Resistors</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>499Ω Resistors</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>49Ω Resistors</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.3v Zener diodes</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Red LED</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Green LED</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>100nF Capacitor</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2x3 pin header</td>
+                                        <td>1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p style="text-align:left;">2- Start the soldering process by adding solder to PCB pads with one hand and try to move the circuit components by the other. Keep repeating this process for all the components. </p>
+                            <img src="assets/pcb/19.jpg" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">3- To avoid having a short circuit, remove the excess solder and the copper on the edge with a scalpel. Also, check the ends of the components using a multimeter.</p>
+                            
                             <br><br>
                             
-                            <p class="mb-0" ><b># Challenges:</b><br>I did not face any major challenges because I have previous experience in using Fusion 360 software.<br><br></p> 
+                            <p class="mb-0" ><b># Challenges:</b><br>I did face two main challenges. The first was during soldering, where I could not easily place the components and solder them, so I kept repeating this process. The second challenge was during the programming process, I kept following the steps given to me, but my laptop was continuously crashing.<br><br></p> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        
        
+
+        
+        
+        
         <!-- Footer-->
         <footer class="footer text-faded text-center py-5">
             <div class="container"><p class="m-0 small">Copyright &copy; Amal Ashoor 2022</p></div>
