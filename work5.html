@@ -162,10 +162,86 @@
                             <img src="assets/pcb/19.jpg" style="width:70%;"> 
                             <br>
                             <p style="text-align:left;">3- To avoid having a short circuit, remove the excess solder and the copper on the edge with a scalpel. Also, check the ends of the components using a multimeter.</p>
+                            <br><br>
+                            <p class="mb-0" ><i><ins> C. Programming:</ins></i><br><br></p>
+                            <p style="text-align:left;">1- Before starting the programming section, I installed <a href=“https://brewinstall.org/install-crosspack-mac-osx/”>CrossPack</a> and <a href=“https://treehouse.github.io/installation-guides/mac/homebrew”>Homebrew</a> on my Mac.  </p>
+                            <br>
+                            <p style="text-align:left;">2- Using Terminal, I typed the following five commands and waited for each one to terminate before typing the next:<br>
+                                 -<mark>[ $ brew tap osx-cross/avr]</mark><br>
+                                 -<mark>[ $ brew install binutills]</mark><br>
+                                 -<mark>[ $ brew install gcc]</mark><br>
+                                 -<mark>[ $ brew tap osx-cross/avr && brew install avr-gcc]</mark><br>
+                                 -<mark>[ $ brew install avrdude]</mark><br>
+                            </p>
+                            <br>
+                            <p style="text-align:left;">3- Restart Terminal and check the following command to confirm that the software version matches my MacOS system <mark>[ $ avr-gcc --version]</mark><br>
+                            </p>
+                            <img src="assets/pcb/screen/3.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">Then, check if the command <mark>[ $ make -v]</mark> is working.<br> 
+                            </p>
+                            <img src="assets/pcb/screen/4.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">4- Upload the firmware source code from <a href=“http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html”>here</a> as a folder named "fts_firmware_bdm_v1". <br> 
+                            </p>
+                            <br>
+                            <p style="text-align:left;">5- Open the folder using Terminal and <mark>[ $ cd ]</mark> command. Then, run <mark>[ $ make ]</mark> to create a hex file with the name "fts_firmware.hex" that will be used to program the ATtiny45. <br> 
+                            </p>
+                            <img src="assets/pcb/screen/2.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">6- Before programming the FabTinyISP, fix two 2x3 connectors at the ends of a ribbon cable using a hammer. Please notice that the order of the colors on both ends must have been the same.<br> 
+                            </p>
+                            <img src="assets/pcb/21.jpg" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">7- To program my FabISP, I connected it to a previously programed ISP by the ribbon cable. Using Terminal, run the command <mark>[$ make flash]</mark> to program the flash memory.  <br> 
+                            </p>
+                            <img src="assets/pcb/screen/7.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;">8- Now check if the laptop identifies it by clicking on "About this Mac", then "System Report", then "USB". <br> 
+                            </p>
+                            <img src="assets/pcb/screen/5.png" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/26.jpeg" style="width:70%;"> 
+                            <br>
+                            <p class="mb-0" > In my first trial, my laptop did not recognize the ISP due to a short circuit in one of the resisters (R4), as shown below. <br> 
+                            </p>
+                            <img src="assets/pcb/28.jpeg" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;"> 9- Run <mark>[$ make fuses]</mark> then <mark>[$ make  rstdisbl]</mark>.  <br> 
+                            </p>
+                            <img src="assets/pcb/screen/8.png" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/screen/9.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;"> 10-  To attempt to use my FabTinyISP, download Arduino IDE from this <a href=“https://www.arduino.cc/en/Guide/macOS”>website</a> and connect it to the ISP using the ribbon connecter.  <br> 
+                            </p>
+                            <img src="assets/pcb/27.jpeg" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;"> 11-  To add support for the ATtiny, follow step 3 from this <a href=“https://www.instructables.com/Program-an-ATtiny44458485-with-Arduino/”>website</a> <br> 
+                            </p>
+                            <img src="assets/pcb/screen/15.png" style="width:70%;"> 
+                            <br>
+                            <img src="assets/pcb/screen/14.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;"> 12-  Click on Tools and change "Board", "Processor", and "Clock" as shown below.<br> 
+                            </p>
+                            <img src="assets/pcb/screen/11.png" style="width:70%;"> 
+                            <br>
+                            <p style="text-align:left;"> 13-  Choose the programmer by clicking on Sketch then "Upload using programmer".<br> 
+                            </p>
+                            <img src="assets/pcb/screen/10.png" style="width:70%;"> 
+                            <br>
+                            <video width="500" controls>
+                                  <source src="assets/mp4/29.MOV" type="video/mp4">
+                            </video>
+
+
+                            
                             
                             <br><br>
                             
-                            <p class="mb-0" ><b># Challenges:</b><br>I did face two main challenges. The first was during soldering, where I could not easily place the components and solder them, so I kept repeating this process. The second challenge was during the programming process, I kept following the steps given to me, but my laptop was continuously crashing.<br><br></p> 
+                            <p class="mb-0" ><b># Challenges:</b><br>I did face two main challenges. The first was during soldering, where I could not easily place the components and solder them, so I kept repeating this process. The second challenge was during the programming process, I kept following the steps given to me, but my laptop was continuously crashing, so I used my sister's laptop.<br><br></p> 
+                            
                         </div>
                     </div>
                 </div>
